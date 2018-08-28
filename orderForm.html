@@ -1,42 +1,46 @@
 <!--This HTML CSS page is for the form, which is used to take order and also build your own cupcake-->
 <!DOCTYPE html>
-<html lang= "en">
-    <head>
-        <title>Cupcake Orders</title>
-        <meta charset= "UTF-8">
-        <link rel="stylesheet" href="Styles/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <script  src="Script/scripting.js"></script>
-        
-    </head>
-    <body id="formPage">
+<html lang="en">
+
+<head>
+    <title>Cupcake Orders</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <aside class="formPage">
+        <aside class="sideLogo">
+            <a href="trialWebpage.html"><img src="Images/logo.png" alt="logo" style="width:100px; height:100px;"></a>
+        </aside>
         <h1 id="formHeader">Your Custom Order</h1>
         <blockquote><em>"Build your own Treat"</em></blockquote>
-        <form action="none" method="post">
-
-            <ul id="formList">
-                <li>            
-                    <!-- <label for="name">Name</label> -->
-                    <!-- <input id="name" type="text" value="Name" style="color:grey" onclick= "nameClick()"/> -->
-                    <input id="name" type="text" placeholder="Name" style="color:rgb(0, 0, 0)"/>
-                </li>
-                <li>
-                    <input id="Phone" type="text" placeholder="Phone Number" style="color:rgb(0, 0, 0)"/>
-                </li>
-                <li>            
-                    <input id="Address" type="text" placeholder="House Address" style="color: black"/>
-                </li>        
-                <li>            
-                    <input id="City" type="text" placeholder="City" style="color: black" />
-                </li>
-                <li>
-                    <input id="State" type="text" placeholder="State" style="color:black">
-                    <!-- <textarea id="fill" style ="color:grey" >State</textarea> -->
-                </li>
-                <li>
-                    <!-- <label for="Quantity" >Quantity (box)</label> -->
-                    <select>
+        <section class="formContainer">
+            <form action="none" method="post">
+                <ul id="formList">
+                    <li>
+                        <input id="name" type="text" placeholder="Name" style="color:rgb(0, 0, 0)" />
+                    </li>
+                    <li>
+                        <input id="Phone" type="text" placeholder="Phone Number" style="color:rgb(0, 0, 0)" />
+                    </li>
+                    <li>
+                        <input id="Address" type="text" placeholder="House Address" style="color: black" />
+                    </li>
+                    <li>
+                        <input id="City" type="text" placeholder="City" style="color: black" />
+                    </li>
+                    <li>
+                        <input id="State" type="text" placeholder="State" style="color:black">
+                        <!-- <textarea id="fill" style ="color:grey" >State</textarea> -->
+                    </li>
+                    <li>
+                        <!-- <label for="Quantity" >Quantity (box)</label> -->
+                        <select>
                             <option value="Choose Box Quantity">Choose Box Quantity</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -44,19 +48,21 @@
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option id="more" value="Other" onclick="qtyFunction()">Other</option>
-                     </select> 
-                </li>
-                <li>
-                    <input id="Quantity" type="text" Placeholder="Quantity" style="visibility:hidden">
-                </li>
-                <li>
-                    <input id="submit" name="submit" type= "submit" value ="Submit" onclick="submitButton()">
-                </li>
-            </ul>
-            
+                        </select>
+                    </li>
+                    <li>
+                        <input id="Quantity" type="text" Placeholder="Quantity" style="visibility:hidden">
+                    </li>
+                    <li>
+                        <input id="submit" name="submit" type="submit" value="Submit" onclick="submitButton()">
+                    </li>
+                </ul>
+            </form>
+        </section>
 
-        </form>
+    </aside>
 
-    </body>
+    <script src="Script/scripting.js"></script>
+</body>
 
 </html>
