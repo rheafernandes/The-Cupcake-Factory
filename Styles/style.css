@@ -1,0 +1,353 @@
+blockquote{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15pt;   
+    text-decoration-color: azure;
+    text-align: center;
+    width:100vw;
+}
+h1,h2{
+    text-decoration-color: rgb(0, 0, 0);
+    font-family: 'Pacifico', cursive;
+    font-size: 150px;
+    letter-spacing: 5px;
+    text-align: center;
+    width:100vw;
+}
+
+#mainHead{
+    margin-bottom: 10px;
+}
+/*Only use when you have a logo*/
+/* h1{ 
+    background: url("../Images/2x-AWS.png") 
+    text-indent: -999px;
+    width:
+    hieght:
+} */
+#aboutPage{
+    margin-top:100px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction:column;
+    background-color: rgb(250, 215, 235);
+    background-image: url("../Images/cute-cupcake-wallpapers.png"); /* The image used */
+    height: 100vh; 
+    width: 100vw; 
+    padding-left:10px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container*/
+    font-family: sans-serif;
+}
+#formPage{
+    background-color: rgb(250, 215, 235);
+    background-image: url("../Images/Spiky.jpg"); /* The image used */
+    height: 100vh; /* You must set a specified height */
+    width: 100vw;
+    padding-left: 10px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container*/
+    font-family: sans-serif;
+}
+#formHeader{
+    text-decoration-color: rgb(0, 0, 0);
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    font-size: 70px;
+    letter-spacing: 7px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+a:hover{
+    text-decoration: none;
+    text-shadow: 5px 5px 10px black;
+    color: rgb(255, 255, 255);
+}
+.Home{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+.Home:hover{
+    text-decoration: none;
+    text-shadow: 5px 5px 5px black;
+    color:rgb(255, 133, 154);
+}
+ul{
+    width: 800px;
+    list-style: none;
+    margin:auto;
+}
+#formList{
+    list-style: none;
+}
+.mainList li{
+    display: inline;
+    padding-right: 30px;
+    justify-content: center;
+    float:center;
+}
+#mainNavigation{
+    width:100vw;
+    margin:0 auto;
+    position:fixed;
+}
+#formList li{
+    padding-bottom: 30px;
+}
+#mainPage{
+    background-color: rgb(250, 215, 235);
+    background-image: url("../Images/mainPage.jpg"); /* The image used */
+    height: 100vw; /* You must set a specified height */
+    width: 100vh;
+    text-align: center;
+    padding-left: 0px;
+    padding-top:20px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container*/
+    font-family: sans-serif;
+}
+.aboutBox1,.aboutBox2{
+    display: flex;  
+    flex-direction: column;
+    /*justify-content: space-between; */
+    height: 45%;
+    width: 60vw;
+    margin:auto;
+    background-color:white;
+    opacity: 0.5;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    text-decoration-color: rgb(0, 0, 0);
+    /* -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); (only use this if you want a blur)*/
+}
+.aboutBox1 p, .aboutBox1 h2,.aboutBox2 p, .aboutBox2 h2{
+
+    text-decoration-color: #000000;
+     line-height: 30px;
+}
+.aboutBox1 p, .aboutBox2 p{
+    margin-top:100px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+.aboutBox2 h2,.aboutBox1 h2{
+    margin-left:0;
+    margin:auto;
+    line-height:0px;
+    text-align: center;
+    position: absolute;
+    left:0;
+    font-size:100px;
+    width:100vw;
+}
+#formPage, #mainPage, #aboutPage{
+    background-attachment: fixed;
+}
+/* 
+.box1, .box2, .box3{
+    text-indent:-9999px;
+} */
+
+.subBox2, .subBox1 {
+    padding-top:35px;
+    padding-bottom: 5px;
+    height: 35%;
+    background-color:white;
+    opacity: 0.5;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.subBox1 p, .subBox2 p, .subBox1 h4, .subBox2 h4{
+    margin: 5%;
+    text-decoration-color: #000000;
+    line-height: 40px;
+    text-align: center;
+}
+.subBox1 h4, .subBox2 h4{
+    text-decoration-color: rgb(0, 0, 0);
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    /* line-height:0px; */
+    text-align: center;
+}
+.container {
+    /* border:1px rgb(110, 109, 109) solid; */
+    border: 10px solid transparent;
+    padding: 0px;
+    /* -webkit-border-image: url("../Images/plaid-checks-background-pink.jpg") 30 round;*/ /* Safari 3.1-5 */
+    /*-o-border-image: url("../Images/plaid-checks-background-pink.jpg") 30 round; /* Opera 11-12.1 */
+    background-color: rgb(248, 152, 141);
+    display:flex;
+    justify-content: space-between;
+}
+
+.proContainer{
+    border:1px solid transparent;
+    display:flex;
+    justify-content: space-between;
+    background-image: url("../Images/creamPattern.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box1{
+width:60%;
+order:2;
+background-image: url("../Images/CupcakeImage.jpg");
+background-position: center;
+background-size: cover;
+height: 900px;
+}
+.box2{
+width:17%;
+order:1;
+display:flex;
+justify-content: space-evenly;
+flex-direction:column;
+padding-left:22px;
+}
+.box3{
+width:17%; 
+order:3;
+display:flex;
+justify-content: space-evenly;
+flex-direction:column;
+padding-right:22px;
+}
+.box1:hover{
+    width:60%;
+    order:2;
+    background-image: url("../Images/CupcakeImage.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    opacity:0.7;
+} 
+
+
+.proBox1{
+width:50%;
+align-content: center;
+order:2;
+/* background-image: url("../Images/CupcakeImage.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain; */
+height:100vh;
+}
+.proBox2{
+width:15%;
+order:1;
+background-color: sandybrown;
+height:100vh;
+}
+.proBox3{
+width:15%; 
+order:3;
+background-color: sandybrown;
+height:100vh;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.proBox1 .prev, .proBox1 .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 270px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.carousel{
+    margin:auto;
+    width:100%;
+    height: 100vh; 
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+}
+#mainPageFoot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+}
+
+
