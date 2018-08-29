@@ -556,6 +556,9 @@ html {
         padding-top:0px;
         font-size:45px;
     }
+    .about{
+        background-image: url("../Images/pinkBG.jpg"); 
+    }
 }
 
 @media screen and (max-width:476px)
@@ -693,10 +696,10 @@ html {
         font-size: 12pt;  
     }
     .proBox1{
-        height:90%;
+        height:80%;
         }
     .proBox1:hover{
-        height:90%;
+        height:80%;
 
     }
 
