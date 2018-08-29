@@ -234,7 +234,7 @@ opacity: 0.6;
     flex-direction:column;
     background-color: rgb(250, 215, 235);
     background-image: url("../Images/Spiky.jpg"); /* The image used */
-    height: 100vh; /* You must set a specified height */
+    /* height: 100vh; You must set a specified height */
     width: 100vw;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -557,6 +557,7 @@ html {
         font-size:45px;
     }
 }
+
 @media screen and (max-width:476px)
 {
     h1,h2{
@@ -677,17 +678,9 @@ html {
     }
     #name, #Phone, #Address, #City, #State, #Quantity ,#select, #submit{
         width:40vw;
-        height:20px;
+        height:25px;
     }
 
-}
-@media screen and (max-width:200px)
-{
-    #formHeader{
-        margin-top:50px;
-        padding-top:0px;
-        font-size:30px;
-    } 
 }
 
 
