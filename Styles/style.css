@@ -243,7 +243,7 @@ opacity: 0.6;
 }
 .formContainer{
     align-items:flex-start;
-    width: 30vw;
+    width: 50vw;
     margin:auto;
     background-color:white;
     opacity: 0.8;
@@ -261,12 +261,12 @@ opacity: 0.6;
 #formList{
     padding:5%;
     list-style: none;
-    width:30vw;
+    width:40vw;
 
 }
 
 #formList li{
-    width: 25vw;
+    width: 40vw;
     padding-bottom: 30px;
 }
 
@@ -274,7 +274,7 @@ opacity: 0.6;
     background-attachment: fixed;
 }
 #name, #Phone, #Address, #City, #State, #Quantity ,#select, #submit{
-    width:25vw;
+    width:40vw;
     height:30px;
 }
 #select, #submit{
@@ -439,9 +439,6 @@ html {
     .container {
         justify-content:space-evenly; /*for 3 section page*/
     }
-    .box1{
-        width:65%; /*for 3 section page*/
-    }
     .mainList li{
         margin-right:0; /*main page*/
 
@@ -461,10 +458,10 @@ html {
         order:3;
     }
     .box1:hover{
-        padding-top:40px;
+        padding-top:70px;
         width:70%;
         order:1;
-        height: 90vh;
+        height: 80vh;
         opacity:0.7;
     }
 }
@@ -487,7 +484,7 @@ html {
     .box1:hover{
         padding-top:70px;
         width:90%;
-        height: 90vh;
+        height: 80vh;
         opacity:0.7;
     }
     .proBox1{
@@ -524,6 +521,12 @@ html {
         width:80%;
         height:80% /*for 3 section page*/
     }
+    .box1:hover{
+    padding-top:100px;
+    width:80%;
+    height:80%;
+    opacity:0.7;
+    }
     h1,h2{
         font-size: 80px;
     }
@@ -536,7 +539,7 @@ html {
         width:80%;
     }
     .formContainer{
-        width:40vw;
+        width:50vw;
     }
     .aboutBox1 p{
         margin:20px;
@@ -548,14 +551,14 @@ html {
     .aboutBox1{ 
         width: 80vw;
     }
-}
-@media screen and (max-width:425px)
-{
-    .box1{
-        padding-top:100px;
-        width:80%;
-        height:80% /*for 3 section page*/
+    #formHeader{
+        margin-top:100px;
+        padding-top:0px;
+        font-size:45px;
     }
+}
+@media screen and (max-width:476px)
+{
     h1,h2{
         padding-top:240px;
         font-size: 45px;
@@ -606,17 +609,18 @@ html {
     }
     .box3{
         width:80%;
-        padding-left:0;
+        padding-right:0;
         justify-content: space-around;
 
     }
     .box1:hover{
+        padding-top:70px;
         width:100%;
     }
     .container{
         flex-direction:column;
     }
-    .subBox1 p, .subBox2 p, .subBox1 h4, .subBox2 h4{
+    .subBox1 p, .subBox2 p,{
         font-size:20px;
     }
     .subBox1 h4, .subBox2 h4{
@@ -639,9 +643,9 @@ html {
         margin:auto;
     }
     #formHeader{
-        margin-top:150px;
+        margin-top:120px;
         padding-top:0px;
-        font-size:45px;
+        font-size:40px;
     }
     .formContainer{
         width:60vw;
@@ -653,6 +657,25 @@ html {
         height:20px;
         width:50vw;
     }
+
+}
+@media screen and (max-width:393px)
+{
+    .subBox1 p, .subBox2 p{
+        font-size:12px;
+    }
+    .subBox1 h4, .subBox2 h4{
+        font-size: 20px;
+    }
+    .mobileList li{
+        padding-right:20px;
+    }
+    #formHeader{
+        margin-top:150px;
+        padding-top:0px;
+        font-size:30px;
+    }
+
 }
 
 
