@@ -649,7 +649,7 @@ html {
         font-size:40px;
     }
     .formContainer{
-        width:60vw;
+        width:70vw;
     }
     #formList{
         margin-left:0;
@@ -672,13 +672,25 @@ html {
         padding-right:20px;
     }
     #formHeader{
-        margin-top:100px;
+        margin-top:130px;
         padding-top:0px;
-        font-size:30px;
+        font-size:20px;
     }
     #name, #Phone, #Address, #City, #State, #Quantity ,#select, #submit{
-        width:40vw;
+        width:59vw;
         height:25px;
+    }
+    h1,h2{
+        padding-top:100px;
+        font-size: 45px;
+    }
+    .sideLogo{
+        width:120px;
+        height:120px;
+        top: 35px;
+    }
+    blockquote{
+        font-size: 12pt;  
     }
 
 }
