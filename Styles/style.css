@@ -692,6 +692,13 @@ html {
     blockquote{
         font-size: 12pt;  
     }
+    .proBox1{
+        height:90%;
+        }
+    .proBox1:hover{
+        height:90%;
+
+    }
 
 }
 
