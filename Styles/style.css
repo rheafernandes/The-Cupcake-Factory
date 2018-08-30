@@ -705,6 +705,9 @@ html {
     .aboutBox1 h2{
         font-size:30px;
     }
+    .aboutBox1 p{
+        font-size: 14px;
+    }
 
 }
 
