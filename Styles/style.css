@@ -12,6 +12,11 @@
     justify-content: center;
     padding-left:0;
 }
+ul{
+    width: 100vw;
+    list-style: none;
+    margin:auto;
+}
 .mainList li:last-child{
     padding-right:2px;
 }
@@ -48,11 +53,7 @@
     background-size: cover; /* Resize the background image to cover the entire container*/
     font-family: sans-serif;
 }
-ul{
-    width: 100vw;
-    list-style: none;
-    margin:auto;
-}
+
 blockquote{
     font-family: 'Permanent Marker', cursive;
     font-size: 15pt;   
