@@ -1,13 +1,16 @@
+
 /* The main Hero Section */
 .mainList{
     padding-left:0;
 }
+.footList{
+    display: inline;
+}
 .mobileList{
     padding-left:0;
 }
-.mainList li{
+.mainList li,.footList li{
     display: inline;
-    padding-left:2px;
     padding-right:30px;
     justify-content: center;
     padding-left:0;
@@ -47,7 +50,7 @@ ul{
     width: 100vw;
     text-align: center;
     padding-left: 0px;
-    padding-top:20px;
+    padding-top:0px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container*/
@@ -70,6 +73,7 @@ h1,h2{
 
 #mainHead{
     margin-bottom: 10px;
+    margin-top:0;
 }
 a{
     text-decoration: none;
@@ -176,7 +180,7 @@ a:hover{
 
 /*All about page info*/
 .aboutPage{
-    margin-top:100px;
+    margin-top:0px;
     display:flex;
     flex-direction: column;
     font-family: sans-serif;
@@ -190,6 +194,7 @@ a:hover{
     background-size: cover; 
 }
 .aboutBox1{ 
+    z-index:-1;
     align-items:flex-start;
     flex-wrap:wrap;
     width: 60vw;
@@ -210,7 +215,7 @@ a:hover{
     font-size:100px;
     width:60vw;
 }
-.sideLogo{
+.sideLogo,.sLogo{
     position: fixed;
     z-index: 1;
     top: 20px;
@@ -221,7 +226,7 @@ a:hover{
     width:120px;
     height:120px;
 }
-.sideLogo img:hover{
+.sideLogo img:hover,.sLogo img:hover{
 opacity: 0.6;
 }
 #logo{
@@ -258,6 +263,7 @@ opacity: 0.6;
     font-weight: lighter;
     font-size: 70px;
     letter-spacing: 7px;
+    margin:0px;
 }
 
 #formList{
@@ -286,6 +292,46 @@ input{
     text-align: center;
     letter-spacing: 3px;
 }
+/*just trying something out*/
+#listContainer{
+    position:fixed;
+}
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.7;
+    position: relative;
+    top:0;
+}
+
+.navList li:nth-child(2),.navList li:nth-child(3),.navList li:nth-child(4),.navList li:nth-child(5){
+    padding-left:50px;
+    float: left;
+    padding-top:35px;
+}
+.navList li:first-child {
+    float: left;
+}
+
+.navList li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navList li a:hover {
+    background-color: #111;
+}
+img{
+    width:75px;
+    height:75px;
+}
 
 /*Products Page*/
 .proContainer{
@@ -298,6 +344,7 @@ input{
     width:100vw;
     height:100vh;
     margin:auto;
+    position: relative;
 }
  
 .proBox1{
@@ -431,13 +478,30 @@ html {
     overflow-x: hidden;
 }
 @media screen and (max-width:4000px){
+    h1,h2{
+    padding-top:200px;
+    }
     .mobileList li{
         display: none;
+    }
+    .mainList li{
+        display:none;
+    }
+    .sideLogo{
+        display:none;
+    }
+    .navList li:first-child {
+        float: left;
+        padding-right:30vw;
     }
 }
 /* Responsive part for the all Pages */
 @media screen and (max-width:1440px)
 {
+    .navList li:first-child {
+        float: left;
+        padding-right:20vw;
+    }
     .container {
         justify-content:space-evenly; /*for 3 section page*/
     }
@@ -468,6 +532,10 @@ html {
     }
 }
 @media screen and (max-width: 1024px){
+    .navList li:first-child {
+        float: left;
+        padding-right:15vw;
+    }
     h1,h2{
 
         font-size: 100px;
@@ -518,6 +586,10 @@ html {
 }
 @media screen and (max-width:768px)
 {
+    .navList li:first-child {
+        float: left;
+        padding-right:5vw;
+    }
     .box1{
         padding-top:100px;
         width:80%;
@@ -531,7 +603,6 @@ html {
     }
     h1,h2{
         font-size: 75px;
-        padding-top:30px;
     }
     .proBox1{
         width:80%;
@@ -557,6 +628,7 @@ html {
     }
     .aboutBox1{ 
         width: 80vw;
+        
     }
     #formHeader{
         margin-top:100px;
@@ -566,7 +638,7 @@ html {
     .about{
         background-image: url("../Images/pinkBG.jpg"); 
     }
-    .sideLogo{
+    .sideLogo,.sLogo{
         top: 35px;
     }
 }
@@ -593,16 +665,22 @@ html {
     .mobileList li{
         display: inline;
     }
+    .footList li{
+        display:none;
+    }
     .mainList li{
+        display:none;
+    }
+    .navList li{
         display:none;
     }
     .mainNavigation{
         left:0px;
     }
-    .sideLogo{
+    .sideLogo,.sLogo{
         width:120px;
         height:120px;
-        top: 35px;
+        display:flex;
     }
     .box1{
         padding-top:70px;
@@ -684,10 +762,10 @@ html {
         height:25px;
     }
     h1,h2{
-        padding-top:100px;
+        padding-top:200px;
         font-size: 45px;
     }
-    .sideLogo{
+    .sideLogo,.sLogo{
         width:120px;
         height:120px;
         top: 35px;
