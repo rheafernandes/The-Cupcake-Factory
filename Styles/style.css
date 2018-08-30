@@ -1,18 +1,10 @@
-
+/*Corrections to be made background-size:100%*/
 /* The main Hero Section */
-.mainList{
-    padding-left:0;
-}
 
 .mobileList,.mobileListF{
     padding-left:0;
 }
-.mainList li{
-    display: inline;
-    padding-right:30px;
-    justify-content: center;
-    padding-left:0;
-}
+
 ul{
     width: 100vw;
     list-style: none;
@@ -31,7 +23,7 @@ ul{
     padding-right:30px;
     justify-content: center;
     padding-left:0;
-
+    font-size:23px;
 }
 .mainNavigation{
     width:100vw;
@@ -39,7 +31,7 @@ ul{
     position:fixed;
     align-content: center;
     background-color: #000000;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 .mainPage{
     background-color: rgb(250, 215, 235);
@@ -47,8 +39,6 @@ ul{
     height: 100vh; 
     width: 100vw;
     text-align: center;
-    padding-left: 0px;
-    padding-top:0px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container*/
@@ -57,7 +47,7 @@ ul{
 
 blockquote{
     font-family: 'Permanent Marker', cursive;
-    font-size: 15pt;   
+    font-size: 25pt;   
     text-align: center;
     width:auto;
 }
@@ -239,7 +229,7 @@ opacity: 0.6;
     flex-direction:column;
     background-color: rgb(250, 215, 235);
     background-image: url("../Images/Spiky.jpg"); /* The image used */
-    /* height: 100vh; You must set a specified height */
+    height: 200vh;
     width: 100vw;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -250,6 +240,7 @@ opacity: 0.6;
     align-items:flex-start;
     width: 50vw;
     margin:auto;
+    margin-top:10%;
     background-color:white;
     opacity: 0.8;
     filter: alpha(opacity=80); /* For IE8 and earlier */
@@ -300,13 +291,13 @@ input{
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    opacity: 0.7;
+    opacity: 0.6;
     position: relative;
     top:0;
 }
 
 .navList li:nth-child(2),.navList li:nth-child(3),.navList li:nth-child(4),.navList li:nth-child(5){
-    padding-left:50px;
+    padding-left:4vw;
     float: left;
     padding-top:35px;
 }
@@ -320,6 +311,7 @@ input{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size:30px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -477,7 +469,7 @@ html {
 }
 @media screen and (max-width:4000px){
     h1,h2{
-    padding-top:200px;
+        padding-top:15vh;
     }
     .mobileList li{
         display: none;
@@ -491,7 +483,7 @@ html {
     }
     .navList li:first-child {
         float: left;
-        padding-right:30vw;
+        padding-right:27vw;
     }
 }
 /* Responsive part for the all Pages */
@@ -499,7 +491,7 @@ html {
 {
     .navList li:first-child {
         float: left;
-        padding-right:20vw;
+        padding-right:13vw;
     }
     .container {
         justify-content:space-evenly; /*for 3 section page*/
@@ -533,7 +525,10 @@ html {
 @media screen and (max-width: 1024px){
     .navList li:first-child {
         float: left;
-        padding-right:15vw;
+        padding-right:4vw;
+    }
+    .navList li a {
+        font-size:25px;
     }
     h1,h2{
 
@@ -585,9 +580,14 @@ html {
 }
 @media screen and (max-width:768px)
 {
-    .navList li:first-child {
+
+    .navList li a {
+        font-size:17px;
+        padding:0;
+    }
+    .navList li a:first-child {
         float: left;
-        padding-right:5vw;
+        padding-right:2.5vw;
     }
     .box1{
         padding-top:100px;
@@ -640,6 +640,9 @@ html {
     .sideLogo,.sLogo{
         top: 35px;
     }
+    .carousel{
+        width:70%;
+    }
 }
 
 @media screen and (max-width:476px)
@@ -655,8 +658,7 @@ html {
         width:40vw;
     }
     blockquote{
-        color:rgb(252, 208, 221);
-        text-shadow: 3px 3px 2px black;
+        color:rgb(2, 2, 2);
     }
     a{
         text-shadow: 5px 5px 5px black;
@@ -713,12 +715,7 @@ html {
     .aboutBox1 h2{
         font-size:50px;
     }
-    .proBox1{
-        height:70%;
-        width:90%;
-        }
-    .proBox1:hover{
-        height:70%;
+    .carousel{
         width:90%;
     }
     #formHeader{
