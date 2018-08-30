@@ -3,13 +3,11 @@
 .mainList{
     padding-left:0;
 }
-.footList{
-    display: inline;
-}
-.mobileList{
+
+.mobileList,.mobileListF{
     padding-left:0;
 }
-.mainList li,.footList li{
+.mainList li{
     display: inline;
     padding-right:30px;
     justify-content: center;
@@ -20,14 +18,14 @@ ul{
     list-style: none;
     margin:auto;
 }
-.mainList li:last-child{
+.mobileListF li:last-child{
     padding-right:2px;
 }
 .mobileList li:last-child{
     padding-right:2px;
 }
 
-.mobileList li{
+.mobileList li,.mobileListF li{
     display: inline;
     padding-left:2px;
     padding-right:30px;
@@ -484,6 +482,7 @@ html {
     .mobileList li{
         display: none;
     }
+    
     .mainList li{
         display:none;
     }
@@ -665,9 +664,7 @@ html {
     .mobileList li{
         display: inline;
     }
-    .footList li{
-        display:none;
-    }
+
     .mainList li{
         display:none;
     }
