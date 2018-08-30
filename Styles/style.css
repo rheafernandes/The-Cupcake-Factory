@@ -529,15 +529,20 @@ html {
     opacity:0.7;
     }
     h1,h2{
-        font-size: 80px;
+        font-size: 75px;
+        padding-top:30px;
     }
     .proBox1{
         width:80%;
+        height:80%;
+        margin:auto;
         order:1;
         }
     .proBox1:hover{
         order:1;
+        height:80%;
         width:80%;
+        margin:auto;
     }
     .formContainer{
         width:50vw;
@@ -554,11 +559,14 @@ html {
     }
     #formHeader{
         margin-top:100px;
-        padding-top:0px;
+        padding-top:20px;
         font-size:45px;
     }
     .about{
         background-image: url("../Images/pinkBG.jpg"); 
+    }
+    .sideLogo{
+        top: 35px;
     }
 }
 
@@ -570,14 +578,6 @@ html {
     }
     .mainPage{
     background-image: url("../Images/46064-cherry-cupcake.jpeg");
-    }
-    .proBox1{
-        width:80%;
-        order:1;
-        }
-    .proBox1:hover{
-        order:1;
-        width:80%;
     }
     .formContainer{
         width:40vw;
@@ -640,12 +640,10 @@ html {
     .proBox1{
         height:70%;
         width:90%;
-        margin:auto;
         }
     .proBox1:hover{
         height:70%;
         width:90%;
-        margin:auto;
     }
     #formHeader{
         margin-top:120px;
