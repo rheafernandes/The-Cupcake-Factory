@@ -407,7 +407,7 @@ img{
 .caption {
   color: #f2f2f2;
   font-family: 'Pacifico', cursive;
-  font-size: 25px;
+  font-size: 45px;
   font-weight: bold;
   padding: 8px 12px;
   position: absolute;
@@ -419,7 +419,7 @@ img{
 .caption:hover {
     color: #f2f2f2;
     font-family: 'Pacifico', cursive;
-    font-size: 25px;
+    font-size:45px;
     font-weight: bold;
     padding: 8px 12px;
     position: absolute;
@@ -647,6 +647,9 @@ html {
 
 @media screen and (max-width:476px)
 {
+    .caption{
+        font-size:30px;
+    }
     h1,h2{
         padding-top:240px;
         font-size: 45px;
